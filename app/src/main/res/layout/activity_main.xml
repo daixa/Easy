@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/fragment_cycle_viewpager_content"
+                android:name="com.example.kf00002.easybuy.mlib.CycleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="720px"
+                android:layout_marginBottom="30px" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_marginBottom="30px"
+
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/my_et"
+                    android:layout_width="720px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+
+                    android:hint="顺路易购" />
+
+                <Button
+                    android:id="@+id/my_search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搜索" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/my_tui_jian"
+                style="@style/title_style"
+                android:text="今日推荐" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/m_iv1"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_iv2"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_iv3"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_iv4"
+                    layout="@layout/m_bitmap" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/my_gou_store"
+                style="@style/title_style"
+                android:text="视频购物商城" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="480px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <VideoView
+                    android:id="@+id/my_video1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight="1" />
+
+                <VideoView
+                    android:id="@+id/my_video2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight="1" />
+
+                <VideoView
+                    android:id="@+id/my_video3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight="1" />
+
+                <VideoView
+                    android:id="@+id/my_video4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight="1" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/my_store"
+                style="@style/title_style"
+                android:text="商城" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/m_sc_iv1"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_sc_iv2"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_sc_iv3"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_sc_iv4"
+                    layout="@layout/m_bitmap" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/my_farm_store"
+                style="@style/title_style"
+                android:text="农村集市" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/m_nc_iv1"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_nc_iv2"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_nc_iv3"
+                    layout="@layout/m_bitmap" />
+
+                <!--<include-->
+                    <!--android:id="@+id/m_nc_iv4"-->
+                    <!--layout="@layout/m_bitmap" />-->
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/my_add_store"
+                style="@style/title_style"
+                android:text="加盟商城" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/m_addstore_iv1"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_addstore_iv2"
+                    layout="@layout/m_bitmap" />
+
+                <include
+                    android:id="@+id/m_addstore_iv3"
+                    layout="@layout/m_bitmap" />
+
+                <!--<include-->
+                    <!--android:id="@+id/m_addstore_iv4"-->
+                    <!--layout="@layout/m_bitmap" />-->
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

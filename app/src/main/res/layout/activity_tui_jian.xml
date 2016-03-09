@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TuiJianActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/tui_jian_most_1"
+                    layout="@layout/good_most" />
+
+                <include
+                    android:id="@+id/tui_jian_most_2"
+                    layout="@layout/good_most" />
+
+                <include
+                    android:id="@+id/tui_jian_most_3"
+                    layout="@layout/good_most" />
+
+                <include
+                    android:id="@+id/tui_jian_most_4"
+                    layout="@layout/good_most" />
+
+                <include
+                    android:id="@+id/tui_jian_most_5"
+                    layout="@layout/good_most" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="今日推荐" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搜索" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <fragment
+                android:id="@+id/fragment_cycle_viewpager_content_tuijian"
+                android:name="com.example.kf00002.easybuy.mlib.CycleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFE5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="今日特价" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/dou_you"
+                    layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/my_tui_jian"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#FFFFE5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#FFFFE5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="品牌专区" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+                <include layout="@layout/first_show_list" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

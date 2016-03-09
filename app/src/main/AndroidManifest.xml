@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kf00002.easybuy">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.TuiJianActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.GouStoreActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.StoreActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.FarmStoreActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AddStroeActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.FinalActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".mbroadcast.BootUpRecever"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="design_width"
+            android:value="1920" />
+        <meta-data
+            android:name="design_height"
+            android:value="1080" />
+
+        <activity android:name=".activity.Activity" />
+        <activity android:name=".activity." />
+    </application>
+
+</manifest>
